@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rani's Babysitting Services</title>
+  <meta name="description" content="Rani is a trusted, experienced babysitter (nayani) with many years of experience in Singapore. Contact her now on WhatsApp for loving and professional care." />
+  <style>
+    /* Reset and basic styling */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; height: auto; display: block; }
+    
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    /* Hero Section with Background Image */
+    .hero {
+      background: url('images/background.jpg') no-repeat center center/cover;
+      height: 100vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      padding: 0 20px;
+    }
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.5em;
+      margin-bottom: 30px;
+    }
+    .btn {
+      background-color: #25D366;
+      color: #fff;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover { background-color: #1da851; }
+
+    /* About Section */
+    .about {
+      padding: 60px 0;
+      background-color: #f7f7f7;
+    }
+    .about-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+    .about-image, .about-text {
+      flex: 1;
+      min-width: 300px;
+      padding: 20px;
+    }
+    .about-text h2 { font-size: 2em; margin-bottom: 20px; }
+    .about-text p { font-size: 1.1em; margin-bottom: 15px; }
+
+    /* Testimonials Section */
+    .testimonials {
+      padding: 60px 0;
+    }
+    .testimonials h2 {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 40px;
+    }
+    .testimonials-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .testimonial {
+      background: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      flex: 1;
+      min-width: 280px;
+      max-width: 320px;
+    }
+    .testimonial p { margin-bottom: 10px; }
+    .testimonial .client { font-weight: bold; }
+
+    /* Call-to-Action Section */
+    .cta {
+      background-color: #25D366;
+      color: #fff;
+      padding: 60px 0;
+      text-align: center;
+    }
+    .cta h2 { font-size: 2.5em; margin-bottom: 20px; }
+    .cta p { font-size: 1.2em; margin-bottom: 30px; }
+    .cta a.btn {
+      background-color: #fff;
+      color: #25D366;
+      font-weight: bold;
+    }
+    .cta a.btn:hover { background-color: #f1f1f1; }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+    footer p { font-size: 0.9em; }
+
+    /* Responsive Styling */
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2.5em; }
+      .hero p { font-size: 1.2em; }
+      .about-content { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content container">
+      <h1>Rani - Trusted Babysitter</h1>
+      <p>Caring for your little ones with love and professionalism</p>
+      <a class="btn" href="https://wa.me/6593886513" target="_blank">Chat on WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <div class="container about-content">
+      <div class="about-image">
+        <img src="https://source.unsplash.com/600x600/?nanny" alt="Rani - Experienced Babysitter" />
+      </div>
+      <div class="about-text">
+        <h2>About Rani</h2>
+        <p>Rani is an experienced nayani with many years of experience in Singapore. She is known for her warm, compassionate approach and professional service.</p>
+        <p>With a deep commitment to the well-being and development of your child, Rani creates a nurturing environment where every child feels loved and secure.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="container">
+      <h2>What Parents Are Saying</h2>
+      <div class="testimonials-container">
+        <div class="testimonial">
+          <p>"Rani has been a blessing for our family. Her dedication and kindness make all the difference."</p>
+          <p class="client">- Sarah, Parent</p>
+        </div>
+        <div class="testimonial">
+          <p>"I feel at ease knowing my child is cared for by someone as professional and loving as Rani."</p>
+          <p class="client">- Michael, Parent</p>
+        </div>
+        <div class="testimonial">
+          <p>"Reliable, compassionate, and truly exceptional. Rani is the best babysitter we’ve ever had."</p>
+          <p class="client">- Linda, Parent</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call-to-Action Section -->
+  <section class="cta">
+    <div class="container">
+      <h2>Give Your Child the Best Care Today</h2>
+      <p>Contact Rani now and secure a loving, professional babysitter for your family.</p>
+      <a class="btn" href="https://wa.me/6593886513" target="_blank">Message Rani on WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>Contact: 93886513</p>
+      <p>&copy; 2025 Rani's Babysitting Services. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
